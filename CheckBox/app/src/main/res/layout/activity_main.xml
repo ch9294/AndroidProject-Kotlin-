@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+>
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <CheckBox
+            android:text="체크박스1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/checkBox"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <CheckBox
+            android:text="체크박스2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/checkBox2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" android:checked="true"/>
+    <CheckBox
+            android:text="체크박스3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/checkBox3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <Button
+            android:text="체크상태 확인하기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button"/>
+    <Button
+            android:text="체크하기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button2"/>
+    <Button
+            android:text="체크 해제하기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button3"/>
+    <Button
+            android:text="체크 상태 반전"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button4"/>
+</LinearLayout>
