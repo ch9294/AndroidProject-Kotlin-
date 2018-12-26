@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+>
+
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/radioG1">
+        <RadioButton
+                android:text="라디오1-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioButton" android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" android:checked="true"/>
+        <RadioButton
+                android:text="라디오1-2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioButton2" android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        <RadioButton
+                android:text="라디오1-3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioButton3" android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    </RadioGroup>
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/radioG2">
+        <RadioButton
+                android:text="라디오2-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioButton4" android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" android:checked="true"/>
+        <RadioButton
+                android:text="라디오2-2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioButton5" android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        <RadioButton
+                android:text="라디오2-3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioButton6" android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    </RadioGroup>
+    <Button
+            android:text="체크 상태 가져오기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button"/>
+    <Button
+            android:text="체크하기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button2"/>
+</LinearLayout>
