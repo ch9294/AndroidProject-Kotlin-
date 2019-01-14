@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:layout_weight="1" android:gravity="center_vertical">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:id="@+id/AppTitleText" android:textSize="50dp" android:text="Capstone App"
+                      android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:gravity="center_vertical">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_weight="2"
+                          android:id="@+id/loginText" android:text="아이디 : " android:textSize="20dp"
+                          android:gravity="center"
+                />
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_weight="2"
+                          android:id="@+id/passwordText" android:text="비밀번호 : " android:textSize="20dp"
+                          android:gravity="center"
+                />
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_weight="2"
+                  android:gravity="center_vertical">
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/loginBtn"
+                android:text="로그인"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/signUpBtn"
+                android:text="가입하기"/>
+    </LinearLayout>
+
+</LinearLayout>
