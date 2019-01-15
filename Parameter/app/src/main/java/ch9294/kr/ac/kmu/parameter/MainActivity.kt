@@ -48,7 +48,6 @@ class MainActivity : AppCompatActivity() {
 
     inner class Callback1 : Callback {
         override fun onFailure(call: Call, e: IOException) {
-
             runOnUiThread {
                 Toast.makeText(this@MainActivity, "연결에 실패했습니다.", Toast.LENGTH_SHORT)
             }
@@ -56,17 +55,10 @@ class MainActivity : AppCompatActivity() {
 
         override fun onResponse(call: Call, response: Response) {
             val result = response.body()?.string()
-
-
             val obj = JSONObject(result)
-
             val val1 = obj.getString("value1")
             val val2 = obj.getString("value2")
             val val3 = obj.getString("value3")
-
-//            Log.d("response", "${val1}")
-//            Log.d("response", "${val2}")
-//            Log.d("response", "${val3}")
 
             runOnUiThread {
                 textView2.text = "val1 : ${val1}\n"
